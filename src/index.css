@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0c122c;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 20, 60, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* App specific gradients and utility glow */
+.bg-gradient-royal {
+  background: linear-gradient(180deg, #1b3dbd 0%, #1732a3 50%, #122485 100%);
+}
+
+.bg-gradient-royal-radial {
+  background: radial-gradient(circle at 80% 20%, #2a52e8 0%, #1a3ab8 45%, #102179 100%);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 197, 255, 0.4);
+}
+
+.cyan-btn-shadow {
+  box-shadow: 0 10px 25px -4px rgba(0, 197, 255, 0.5), 0 4px 10px -2px rgba(0, 197, 255, 0.3);
+}
+
+.amber-badge-shadow {
+  box-shadow: 0 8px 18px -3px rgba(254, 187, 27, 0.5);
+}
+
+.sheet-shadow {
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.phone-bezel-shadow {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
